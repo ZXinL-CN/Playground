@@ -1,0 +1,70 @@
+:root {
+  --xl-blue: #5568d7;
+  --xl-green: #083518;
+  --xl-white: #e9f0f0;
+  --xl-grey: #cdcedf;
+  --indigo-bunting: #3266b3; // 靛蓝彩雀
+  --blue-atoll: #4abcd2; // 蓝色环焦
+  --beach-glass: #9de1c6; // 海岸玻璃蓝
+  --puprle-rose: #c9a8d4; // 紫玫瑰
+  --pirouette: #f5bde3; // 巴黎舞步粉
+  --lava-falls: #941611; // 熔岩流红
+  --orange-ochre: #ea601c; // 橘褐色
+  --marigold: #f09839; // 金盏花橘
+  --illuminating: #f5dc43; // 明亮黄
+  --pickled-pepper: #a8a438; // 泡菜辣椒绿
+}
+:root[data-theme-green] {
+  --bg-color: #aad099;
+  --font-color: #047530;
+  --logo-hue: 310deg;
+  ---btn-color: var(--xl-green);
+}
+:root[data-theme-blue] {
+  --logo-hue: 70deg;
+  --bg-color: var(--indigo-bunting);
+  --font-color: var(--xl-grey);
+  --border-color: var(--beach-glass);
+  ---btn-color: var(--blue-atoll);
+}
+:root[data-theme-white] {
+  --bg-color: #e6e0da;
+  --font-color: #de814c;
+  --logo-hue: 210deg;
+  ---btn-color: var(--font-color);
+}
+html {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: bold;
+  border: 5px solid var(--border-color);
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  display: flex;
+}
+body {
+  flex: 1;
+}
+p {
+  font-size: 20px;
+}
+a {
+  display: inline-block;
+  margin: 5px;
+  color: var(--font-color);
+}
+a:hover {
+  color: cyan;
+}
+code {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 4px;
+  border: 4px solid var(--font-color);
+}
+.not-selectable {
+  user-select: none;
+}

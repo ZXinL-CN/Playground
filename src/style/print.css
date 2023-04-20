@@ -1,0 +1,43 @@
+div {
+  background-color: orange;
+}
+
+#print > div {
+  background-color: #fff;
+}
+
+div#print {
+  background-color: skyblue;
+}
+
+.print {
+  background-color: gold !important;
+  /* page-break-after: always; */
+  break-before: page !important;
+}
+
+.print div {
+  background-color: aqua !important;
+}
+
+#print div {
+  background-color: pink !important;
+}
+
+@page {
+  /* 纵向 */
+  size: portrait;
+
+  /* 横向 */
+  size: landscape;
+
+  /* 边距 上右下左 */
+  margin: 10cm 1cm 1cm 2cm;
+}
+
+@page {
+  margin: 0;
+}
+body {
+  margin: 10cm;
+}
