@@ -12,3 +12,4 @@ app.use(ElementPlus)
     .use(router)
     .use(baseComponents)
     .mount('#app')
+
